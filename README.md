@@ -5,6 +5,7 @@ This repository will serve as a Weekly documentation of internship progress.
 ## Table of Contents
 - [Embedded Linux Internship](#embedded-linux-internship)
   - [Table of Contents](#table-of-contents)
+  - [Gantt Chart](#gantt-chart)
   - [Roadmap](#roadmap)
     - [(-) / 14 December](#---14-december)
     - [14 December / 21 December](#14-december--21-december)
@@ -13,6 +14,12 @@ This repository will serve as a Weekly documentation of internship progress.
     - [4 January / 11 January](#4-january--11-january)
     - [11 January / 18 January](#11-january--18-january)
 
+## Gantt Chart
+
+![Gantt Chart](images/Gantt_Chart.png)
+
+> [!NOTE]
+> Timelines can be updated (Especially after [Research Stage](#14-december--21-december)) depending on workload.
 
 ## Roadmap
 
@@ -51,6 +58,3 @@ This repository will serve as a Weekly documentation of internship progress.
    -  ECM protocol
 
 <br>
-
-[!NOTE]
-Timelines can be updated (Especially after [Research Stage](#14-december--21-december)) depending on workload.
