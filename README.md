@@ -18,9 +18,6 @@ This repository will serve as a Weekly documentation of internship progress.
 
 ![Gantt Chart](images/Gantt_Chart.png)
 
-> [!NOTE]
-> Timelines can be updated (Especially after [Research Stage](#14-december--21-december)) depending on workload.
-
 ## Roadmap
 
 ###  (-) / 14 December
@@ -58,3 +55,6 @@ This repository will serve as a Weekly documentation of internship progress.
    -  ECM protocol
 
 <br>
+
+> [!NOTE]
+> Timelines can be updated (Especially after [Research Stage](#14-december--21-december)) depending on workload.
