@@ -2,19 +2,22 @@
 
 ## Week 1 Plan
 
-- <u>[Setup Stage](#setup-stage)</u> 
+- <u>[Setup Stage](#setup-stage)</u> ✔️
 - Setting-up Raspberry Pi ✔️
 - Setting-up SSH connections ✔️
 - **Extra**: Port forwarding for SSH connection ✔️
-- Hardware integrations
+- Hardware integrations ✔️
+
 <br>
+
 - <u>[Research Stage](#research-stage)</u>
 - Researching keywords
 - Researching hardware and utilities
 - Researching implementations
 
+
 > [!NOTE]
-> In my Gantt Chart I was going to start the `Setup Stage` in Week 2 but because I've already know how to setup raspberry and SSH connections, I just did it in `Research Stage` to reduce workload for Week 2.
+> I was going to start the `Setup Stage` in Week 2 but because I've already know how to setup raspberry and SSH connections, I just did it in `Research Stage` to reduce workload for Week 2.
 
 ## Setup Stage
 
@@ -23,6 +26,7 @@ Notes:
 - I used **32-bit Raspberry pi for the OS** on my raspberry.
 - I've added **custom host-name** to my computer hosts file so I don't have to remember IP address for next time.
 - I've set **SSH port forwarding to my router** so I can use SSH connection over the Internet.
+- Finished up hardware integrations using [docs](https://docs.sixfab.com/docs/raspberry-pi-4g-lte-cellular-modem-kit-getting-started).
 
 ## Source
 
