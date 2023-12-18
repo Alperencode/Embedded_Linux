@@ -1,13 +1,13 @@
 # Embedded Linux Internship
 
-This repository will serve as a Weekly documentation of internship progress.
+This repository will be used to keep track of the progress made during the internship on a weekly basis.
 
 ## Table of Contents
 - [Embedded Linux Internship](#embedded-linux-internship)
   - [Table of Contents](#table-of-contents)
   - [Gantt Chart](#gantt-chart)
   - [Roadmap](#roadmap)
-    - [(-) / 14 December](#---14-december)
+    - [(-) / 14 December ✔️](#---14-december-️)
     - [14 December / 21 December](#14-december--21-december)
     - [21 December / 28 December](#21-december--28-december)
     - [28 December / 4 January](#28-december--4-january)
@@ -20,22 +20,22 @@ This repository will serve as a Weekly documentation of internship progress.
 
 ## Roadmap
 
-###  (-) / 14 December
-- Creating GitHub repository
-- Making roadmap
-- Creating Gantt Chart
+###  (-) / 14 December ✔️
+- Creating GitHub repository ✔️
+- Making roadmap ✔️
+- Creating Gantt Chart ✔️
 
 ### 14 December / 21 December
 -	<u>Research Stage</u>
 -	Researching keywords
 -	Researching hardware and utilities
 -	Researching implementations
+-	<u>Setup Stage</u> ✔️
+-	Setting-up Raspberry Pi ✔️
+-	Setting-up SSH connections ✔️
+-	Hardware integrations ✔️
 
 ### 21 December / 28 December
--	<u>Setup Stage</u>
--	Setting-up Raspberry Pi
--	Setting-up SSH connections
--	Hardware integrations
 -	<u>Developing Python AT Library</u>
 
 ### 28 December / 4 January
