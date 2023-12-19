@@ -59,3 +59,57 @@ Notes:
   - PPP Protocol
   - QMI/RMNET protocol
   - ECM protocol
+
+
+### Research notes:
+
+#### AT Commands
+
+AT is the abbreviation for **Attention** and they are used to control MODEMs. The dial up and wireless MODEMs need AT commands to interact with a computer.
+
+The Hayes subset commands are called the basic commands and the **commands specific to a GSM network are called extended AT commands**.
+
+#### Types of AT Commands:
+  - **Test**: Check whether a command is supported or not by the MODEM.
+  - **Read**: Get mobile phone or MODEM settings for an operation.
+  - **Set**: Modify mobile phone or MODEM settings for an operation.
+  - **Execution**: Carry out an operation.
+
+> [!TIP]
+> AT command syntax: AT`<COMMAND>`+`<SUFFIX>`+`<DATA>` \
+> *Suffixes*:
+> - Test : `=?`
+> - Read : `?`
+> - Set : `=`
+> - Execute : `None`
+
+<br>
+
+#### Common commands:
+  - **AT**: This command is used to check communication between the module and the computer.
+    - Returns "OK" or "ERROR"
+  - **+CMGF**: This command is used to set the SMS mode. Either text or PDU mode can be selected by assigning 1 or 0 in the command.
+    - AT+CMGF=`<mode>` (0: PDU mode, 1: text mode)
+    - PDU: Protocol Data Unit
+    - **PDU is more complex but allows more features**
+  - **+CMGW**: This command is used to store message in the SIM.
+    - AT+CMGW=”Phone number”> *Message to be stored* *(Ctrl+z)*
+  - **+CMGS**: This command is used to send a SMS message to a number.
+    - AT+CMGS= *serial number of message to be send.*
+  - **ATD** : This command is used to dial or call a number.
+    - ATD<`Phone number`>;*(Enter)*
+  - **ATA**: This command is used to answer a call.
+    - An incoming call is indicated by a message ‘RING’ which is repeated for every ring of the call.
+    - When the call ends ‘NO CARRIER’ is displayed on the screen.
+  -  **ATH**: This command is used to disconnect remote user link with the GSM module.
+
+<br>
+
+> [!NOTE]
+> More detailed info can be found [here](https://www.engineersgarage.com/at-commands-gsm-at-command-set).
+
+#### Sources
+- [AT Commands, GSM AT command set](https://www.engineersgarage.com/at-commands-gsm-at-command-set/)
+- [What are AT Commands?](https://www.cavliwireless.com/blog/nerdiest-of-things/an-introduction-to-cellular-at-commands.html)
+- [Hayes AT command set](https://en.wikipedia.org/wiki/Hayes_AT_command_set)
+- [Introduction to AT Commands](https://www.youtube.com/watch?v=g1nxe_J3DVI&t=765s&ab_channel=emnify)
