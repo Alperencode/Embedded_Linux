@@ -40,16 +40,18 @@ Notes:
 
 ### Keywords
 
-- AT commands
-- LTE
-- LTE Base HAT
+- [AT commands](#at-commands) ✔️
+- LTE ✔️
 - PCIe LTE Module
+- Cellular HAT
 - baudrate
 - parity
+- RAT Type
+- APN
 
 ### Topics
 
-- AT commands
+- [AT commands](#at-commands) ✔️
 - Python - Modem communication (libraries etc.)
 - Port forwarding
 - What's Webhook
@@ -59,6 +61,7 @@ Notes:
   - PPP Protocol
   - QMI/RMNET protocol
   - ECM protocol
+- Roaming on network
 
 
 ### Research notes:
@@ -84,32 +87,45 @@ The Hayes subset commands are called the basic commands and the **commands speci
 > - Execute : `None`
 
 <br>
-
+  
 #### Common commands:
-  - **AT**: This command is used to check communication between the module and the computer.
+  - **AT**: Check communication between the module and the computer.
     - Returns "OK" or "ERROR"
-  - **+CMGF**: This command is used to set the SMS mode. Either text or PDU mode can be selected by assigning 1 or 0 in the command.
+  - **+CMGF**: Set the SMS mode. Either text or PDU mode can be selected by assigning 1 or 0 in the command.
     - AT+CMGF=`<mode>` (0: PDU mode, 1: text mode)
     - PDU: Protocol Data Unit
     - **PDU is more complex but allows more features**
-  - **+CMGW**: This command is used to store message in the SIM.
+  - **+CMGW**: Store message in the SIM.
     - AT+CMGW=”Phone number”> *Message to be stored* *(Ctrl+z)*
-  - **+CMGS**: This command is used to send a SMS message to a number.
+  - **+CMGS**: Send a SMS message to a number.
     - AT+CMGS= *serial number of message to be send.*
-  - **ATD** : This command is used to dial or call a number.
+  - **ATD** : Dial or call a number.
     - ATD<`Phone number`>;*(Enter)*
-  - **ATA**: This command is used to answer a call.
+  - **ATA**: Answer a call.
     - An incoming call is indicated by a message ‘RING’ which is repeated for every ring of the call.
     - When the call ends ‘NO CARRIER’ is displayed on the screen.
-  -  **ATH**: This command is used to disconnect remote user link with the GSM module.
+  -  **ATH**: Disconnect remote user link with the GSM module.
 
 <br>
 
 > [!NOTE]
 > More detailed info can be found [here](https://www.engineersgarage.com/at-commands-gsm-at-command-set).
 
-#### Sources
+##### Sources
 - [AT Commands, GSM AT command set](https://www.engineersgarage.com/at-commands-gsm-at-command-set/)
 - [What are AT Commands?](https://www.cavliwireless.com/blog/nerdiest-of-things/an-introduction-to-cellular-at-commands.html)
 - [Hayes AT command set](https://en.wikipedia.org/wiki/Hayes_AT_command_set)
 - [Introduction to AT Commands](https://www.youtube.com/watch?v=g1nxe_J3DVI&t=765s&ab_channel=emnify)
+
+#### LTE
+
+- LTE stands for **“Long Term Evolution”**.
+- High-speed **wireless data transmission standard** based on GSM/EDGE and UMTS/HSPA network technologies
+- It improves on those standards' capacity and speed by using a **different radio interface and core network improvements**.
+
+##### Sources
+
+- [What is LTE: How It Works and Why It Matters](https://www.digi.com/blog/post/what-is-lte)
+- [LTE (telecommunication)](https://en.wikipedia.org/wiki/LTE_(telecommunication))
+- [LTE (Long-Term Evolution)](https://www.techtarget.com/searchmobilecomputing/definition/Long-Term-Evolution-LTE)
+- [What is LTE, this Tutorial Explains LTE](https://www.youtube.com/watch?v=lNQcSgKVhSk&ab_channel=VoIPtutorial)
