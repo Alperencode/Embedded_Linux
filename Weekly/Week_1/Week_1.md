@@ -38,4 +38,24 @@ Notes:
 
 ## Research Stage
 
-***Will be updated***
+### Keywords
+
+- AT commands
+- LTE
+- LTE Base HAT
+- PCIe LTE Module
+- baudrate
+- parity
+
+### Topics
+
+- AT commands
+- Python - Modem communication (libraries etc.)
+- Port forwarding
+- What's Webhook
+- What's MQTT broker
+- What's hivemq and hivemq topics
+- Protocols
+  - PPP Protocol
+  - QMI/RMNET protocol
+  - ECM protocol
