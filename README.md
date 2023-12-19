@@ -5,6 +5,7 @@ This repository will be used to keep track of the progress made during the inter
 ## Table of Contents
 - [Embedded Linux Internship](#embedded-linux-internship)
   - [Table of Contents](#table-of-contents)
+  - [Project](#project)
   - [Gantt Chart](#gantt-chart)
   - [Roadmap](#roadmap)
     - [(-) / 14 December ✔️](#---14-december-️)
@@ -13,6 +14,10 @@ This repository will be used to keep track of the progress made during the inter
     - [28 December / 4 January](#28-december--4-january)
     - [4 January / 11 January](#4-january--11-january)
     - [11 January / 18 January](#11-january--18-january)
+
+## Project
+
+You can see the project instructions [here](Project/Project.md).
 
 ## Gantt Chart
 
