@@ -27,6 +27,8 @@ Notes:
 - I've added **custom host-name** to my computer hosts file so I don't have to remember IP address for next time.
 - I've set **SSH port forwarding to my router** so I can use SSH connection over the Internet.
 - Finished up hardware integrations using [docs](https://docs.sixfab.com/docs/raspberry-pi-4g-lte-cellular-modem-kit-getting-started).
+- ***Extra:***
+  - I've also installed and configured git, vim, and ohmyposh to set up my workspace
 
 ## Source
 
@@ -35,19 +37,20 @@ Notes:
     - [How to Access your Raspberry Pi via SSH over the Internet (port forwarding)](https://www.youtube.com/watch?v=ZKfnGqMrnug&ab_channel=TonyTeachesTech)
     - [How to Edit the Hosts File on Windows 10](https://www.youtube.com/watch?v=Htn3WojEdMI&t=158s&ab_channel=TonyTeachesTech)
 
+<br><hr>
 
 ## Research Stage
 
 ### Keywords
 
 - [AT commands](#at-commands) ✔️
-- LTE ✔️
-- PCIe LTE Module
-- Cellular HAT
-- baudrate
-- parity
-- RAT Type
-- APN
+- [LTE](#lte) ✔️
+- [PCIe LTE Module](#pcie-lte-module) ✔️
+- [Cellular Connectivity](#cellular-connectivity) ✔️
+- [Baud](#baud) ✔️
+- [Parity](#parity) ✔️
+- [RAT Type](#rat-type) ✔️
+- [APN](#apn) ✔️
 
 ### Topics
 
@@ -64,10 +67,9 @@ Notes:
 - Roaming on network
 - Python `Serial` module
 
+<br><hr>
 
-### Research notes:
-
-#### AT Commands
+## AT Commands
 
 AT is the abbreviation for **Attention** and they are used to control MODEMs. The dial up and wireless MODEMs need AT commands to interact with a computer.
 
@@ -88,7 +90,7 @@ The Hayes subset commands are called the basic commands and the **commands speci
 > - Execute : `None`
 
 <br>
-  
+
 #### Common commands:
   - **AT**: Check communication between the module and the computer.
     - Returns "OK" or "ERROR"
@@ -118,7 +120,9 @@ The Hayes subset commands are called the basic commands and the **commands speci
 - [Hayes AT command set](https://en.wikipedia.org/wiki/Hayes_AT_command_set)
 - [Introduction to AT Commands](https://www.youtube.com/watch?v=g1nxe_J3DVI&t=765s&ab_channel=emnify)
 
-#### LTE
+<br><hr>
+
+## LTE
 
 - LTE stands for **“Long Term Evolution”**.
 - High-speed **wireless data transmission standard** based on GSM/EDGE and UMTS/HSPA network technologies
@@ -130,3 +134,86 @@ The Hayes subset commands are called the basic commands and the **commands speci
 - [LTE (telecommunication)](https://en.wikipedia.org/wiki/LTE_(telecommunication))
 - [LTE (Long-Term Evolution)](https://www.techtarget.com/searchmobilecomputing/definition/Long-Term-Evolution-LTE)
 - [What is LTE, this Tutorial Explains LTE](https://www.youtube.com/watch?v=lNQcSgKVhSk&ab_channel=VoIPtutorial)
+
+<br><hr>
+
+## PCIe LTE Module
+
+- The PCIe interface is a high-speed serial computer expansion **bus standard** that is used to connect various hardware devices, such as network cards, graphics cards, and storage controllers, to a computer's motherboard.
+- PCIe LTE modules are typically **used to add cellular connectivity** to devices like laptops, desktop computers, and other embedded systems.
+
+<br><hr>
+
+## Cellular Connectivity
+
+- Cellular connectivity refers to the **ability of a device to connect to a mobile network and communicate with other devices or services over that network**.
+- It relies on cellular technology, such as GSM (Global System for Mobile Communications), CDMA (Code Division Multiple Access), or LTE (Long-Term Evolution), to establish a wireless connection between devices and a cellular network infrastructure.
+
+**Key Components:**
+- Mobile Networks
+- SIM Cards
+- Frequency Bands
+- Protocols and Standarts
+- Data Plans
+
+<br><hr>
+
+## Baud
+
+- In telecommunication and electronics, baud (symbol: Bd) is a common unit of measurement of symbol rate, which is one of the components that determine the speed of communication over a data channel.
+- *Symbols per second* or *pulses per second*
+
+> [!IMPORTANT]
+> Definition:
+> - T<sub>s</sub> = 1 / f<sub>s</sub>
+> - *Example*: **Communication at the baud rate 1000 Bd means** communication by means of sending 1000 symbols per second. In the case of a modem, this corresponds to 1000 tones per second. The symbol duration time is 1/1000 second (that is, 1 millisecond).
+
+- You configure BaudRate as bits per second. The transferred bits include the **start bit**, **the data bits**, **the parity bit (if used)**, **and the stop bits**. However, only the data bits are stored.
+
+> [!WARNING]
+> Both the computer and the peripheral device must be configured to the same baud rate before you can successfully read or write data.
+
+
+##### Sources
+
+- [Baud (Wikipedia)](https://en.wikipedia.org/wiki/Baud)
+- [BaudRate](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/matlab_external/baudrate.html)
+
+<br><hr>
+
+## Parity
+
+- In computers, parity (from the Latin paritas, meaning equal or equivalent) **is a technique that checks whether data has been lost or written over when it is moved from one place in storage to another** or when it is transmitted between computers.
+-  A parity bit adds **checksums** into data that enable the target device to determine whether the data was received correctly.
+
+> [!TIP]
+> You can configure Parity to be `none`, `odd`, `even`, `mark`, or `space`.
+
+
+##### Sources
+
+- [Parity (TechTarget)](https://www.techtarget.com/searchstorage/definition/parity)
+- [Parity (northwestern.edu)](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/matlab_external/parity.html)
+
+<br><hr>
+
+## RAT Type
+
+- The RAT (Radio Access Technology) type **represents the radio technology used by the mobile device**. This can be useful in determining what services or content can be sent to a specific mobile device.
+- Many modern mobile phones support several RATs in one device such as **Bluetooth**, **Wi-Fi**, and **GSM**, **UMTS**, **LTE** or **5G NR**.
+
+##### Sources
+
+- [Radio Access Technology (Wikipedia)](https://en.wikipedia.org/wiki/Radio_access_technology)
+- [Radio Access Technology (RAT) type](https://docs.fortinet.com/document/fortigate/7.4.1/fortios-carrier/265246/radio-access-technology-rat-type)
+
+<br><hr>
+
+## APN
+
+- An Access Point Name (APN) is the **name of a [gateway](https://en.wikipedia.org/wiki/Gateway_(telecommunications)) between a mobile network (GSM, GPRS, 3G, 4G and 5G) and another computer network**, frequently the public Internet.
+- APN identifies the [packet data network (PDN)](https://en.wikipedia.org/wiki/Packet_switching) that a mobile data user wants to communicate with.
+
+##### Sources
+
+- [Access Point Name (Wikipedia)](https://en.wikipedia.org/wiki/Access_Point_Name)
