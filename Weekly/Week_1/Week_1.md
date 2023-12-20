@@ -62,6 +62,7 @@ Notes:
   - QMI/RMNET protocol
   - ECM protocol
 - Roaming on network
+- Python `Serial` module
 
 
 ### Research notes:
