@@ -9,7 +9,7 @@ This repository will be used to keep track of the progress made during the inter
   - [Gantt Chart](#gantt-chart)
   - [Roadmap](#roadmap)
     - [(-) / 14 December ✔️](#---14-december-️)
-    - [14 December / 21 December](#14-december--21-december)
+    - [14 December / 21 December ✔️](#14-december--21-december-️)
     - [21 December / 28 December](#21-december--28-december)
     - [28 December / 4 January](#28-december--4-january)
     - [4 January / 11 January](#4-january--11-january)
@@ -25,16 +25,16 @@ You can see the project instructions [here](Project/Project.md).
 
 ## Roadmap
 
-###  (-) / 14 December ✔️
+###  [(-) / 14 December](Weekly/Week_0/Week_0.md) ✔️
 - Creating GitHub repository ✔️
 - Making roadmap ✔️
 - Creating Gantt Chart ✔️
 
-### 14 December / 21 December
--	<u>Research Stage</u>
--	Researching keywords
--	Researching hardware and utilities
--	Researching implementations
+### [14 December / 21 December](Weekly/Week_1/Week_1.md) ✔️
+-	<u>Research Stage</u> ✔️
+-	Researching keywords ✔️
+-	Researching hardware and utilities ✔️
+-	Researching implementations ✔️
 -	<u>Setup Stage</u> ✔️
 -	Setting-up Raspberry Pi ✔️
 -	Setting-up SSH connections ✔️
