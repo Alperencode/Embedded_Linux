@@ -40,7 +40,7 @@ You can see the project instructions [here](Project/Project.md).
 -	Setting-up SSH connections ✔️
 -	Hardware integrations ✔️
 
-### 21 December / 28 December
+### [21 December / 28 December](Weekly/Week_2/Week_2.md)
 -	<u>Developing Python AT Library</u>
 
 ### 28 December / 4 January
