@@ -11,9 +11,9 @@
 <br>
 
 - <u>[Research Stage](#research-stage)</u>
-- Researching keywords
-- Researching hardware and utilities
-- Researching implementations
+- Researching keywords ✔️
+- Researching hardware and utilities ✔️
+- Researching implementations ✔️
 
 
 > [!NOTE]
@@ -28,14 +28,13 @@ Notes:
 - I've set **SSH port forwarding to my router** so I can use SSH connection over the Internet.
 - Finished up hardware integrations using [docs](https://docs.sixfab.com/docs/raspberry-pi-4g-lte-cellular-modem-kit-getting-started).
 - ***Extra:***
-  - I've also installed and configured git, vim, and ohmyposh to set up my workspace
+  - I've also installed and configured git, vim, tmux, and ohmyposh to set up my workspace
 
-## Source
+##### Sources
 
-- Videos that I watched for setting-up raspberry:
-    - [How to Enable SSH on a Raspberry Pi (and connect via IP)](https://www.youtube.com/watch?v=63yw7b0NuWc&t=319s&ab_channel=TonyTeachesTech)
-    - [How to Access your Raspberry Pi via SSH over the Internet (port forwarding)](https://www.youtube.com/watch?v=ZKfnGqMrnug&ab_channel=TonyTeachesTech)
-    - [How to Edit the Hosts File on Windows 10](https://www.youtube.com/watch?v=Htn3WojEdMI&t=158s&ab_channel=TonyTeachesTech)
+- [How to Enable SSH on a Raspberry Pi (and connect via IP)](https://www.youtube.com/watch?v=63yw7b0NuWc&t=319s&ab_channel=TonyTeachesTech)
+- [How to Access your Raspberry Pi via SSH over the Internet (port forwarding)](https://www.youtube.com/watch?v=ZKfnGqMrnug&ab_channel=TonyTeachesTech)
+- [How to Edit the Hosts File on Windows 10](https://www.youtube.com/watch?v=Htn3WojEdMI&t=158s&ab_channel=TonyTeachesTech)
 
 <br><hr>
 
@@ -55,17 +54,17 @@ Notes:
 ### Topics
 
 - [AT commands](#at-commands) ✔️
-- Python - Modem communication (libraries etc.)
-- Port forwarding
-- What's Webhook
-- What's MQTT broker
-- What's hivemq and hivemq topics
+- Python - Modem communication (libraries etc.) ✔️
+- [Port forwarding](#port-forwarding]) ✔️
+- [What's Webhook](#webhook) ✔️
+- [What's MQTT broker](#mqtt-broker) ✔️
+- What's hivemq and hivemq topics ✔️
+- Roaming on network ✔️
+- Python `Serial` module ✔️
 - Protocols
   - PPP Protocol
   - QMI/RMNET protocol
   - ECM protocol
-- Roaming on network
-- Python `Serial` module
 
 <br><hr>
 
@@ -217,3 +216,37 @@ The Hayes subset commands are called the basic commands and the **commands speci
 ##### Sources
 
 - [Access Point Name (Wikipedia)](https://en.wikipedia.org/wiki/Access_Point_Name)
+
+<br><hr>
+
+## Webhook
+
+- A webhook is an **HTTP-based callback function** that allows lightweight, event-driven communication between 2 application programming interfaces (APIs).
+- Webhooks are used by a wide variety of web apps **to receive small amounts of data from other apps**.
+
+##### Sources
+
+- [What is a webhook? (Red Hat Blog)](https://www.redhat.com/en/topics/automation/what-is-a-webhook)
+- [What is a webhook? (Youtube)](https://www.youtube.com/watch?v=N0HzqcdFDqI&ab_channel=Cyclr)
+
+<br><hr>
+
+## Port forwarding
+
+- Port forwarding, sometimes called port mapping, allows computers or services in private networks to connect over the internet with other public or private computers or services.
+
+##### Sources
+
+- [What Is Port Forwarding? (Blog)](https://learn.g2.com/port-forwarding)
+- [What The Heck Is Port Forwarding? (Youtube)](https://www.youtube.com/watch?v=WOZQppVNGvA&ab_channel=Techquickie)
+
+<br><hr>
+
+## MQTT Broker
+
+- The MQTT broker is the **backend system which coordinates messages between the different clients**.
+- Responsibilities of the broker include receiving and filtering messages, identifying clients subscribed to each message, and sending them the messages.
+
+##### Sources
+
+- [What is MQTT (Blog)](https://aws.amazon.com/what-is/mqtt)
