@@ -57,7 +57,7 @@ Sending multiple commands
 - Check/Add sending more than one command
 - Improve error handling
 - Complete tests
-  - Current coverage: 32% [12/24/2023]
+  - Current coverage: 56% [12/24/2023]
 
 <br><hr>
 
@@ -77,10 +77,11 @@ Sending multiple commands
 
 - [Understanding the /dev Directory in Linux](https://www.baeldung.com/linux/dev-directory)
 - [Dev Directory](https://dev.to/softwaresennin/linux-directory-structure-simplified-a-comprehensive-guide-3012)
+- [Python Exception Handling Using Pytest Assert](https://pytest-with-eric.com/introduction/pytest-assert-exception/)
+- [Python colored texts](https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python)
 - pySerial Serial class [docs](https://pyserial.readthedocs.io/en/latest/pyserial_api.html).
 - Modem bit settings [here](https://lehman.edu/lehman/depts/depts/langlit/help/setmodem.htm).
 - End of AT commands [question](https://stackoverflow.com/questions/13286086/end-of-response-to-an-at-command) ("\r\n").
-- [Python colored texts](https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python)
 
 <br><hr>
 
@@ -104,4 +105,4 @@ Sending multiple commands
 
 ### Recent Proper Output
 
-![Output](../../images/ATLib1.PNG)
+![Output](../../images/ATLIB.PNG)
