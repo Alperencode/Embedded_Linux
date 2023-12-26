@@ -55,9 +55,11 @@ Sending multiple commands
 - Add function summaries.
 - Fix or Remove the [following](https://github.com/Alperencode/AT-Lib/blob/3dc7a8f33e4a1f9fccd70d9caf2e4e39f374589e/source/atlib.py#L71).
 - Check/Add sending more than one command
-- Improve error handling
+- Improve error handling ✔️
+  - Added raise exceptions for possible exceptions
+    - Example snippet [here](#improve-error-handling-snippet)
 - Complete tests
-  - Current coverage: 56% [12/24/2023]
+  - Current coverage: 92% [12/26/2023]
 
 <br><hr>
 
@@ -72,6 +74,12 @@ Sending multiple commands
   - `/home`: houses user-specific files and directories.
 - Checking input buffer to read port, source [here](https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.in_waiting).
 - Every AT command ends with either `OK` or `ERROR`, source [here](https://www.developershome.com/sms/resultCodes.asp).
+- To add side_effect to test object
+  - Example: `at.serial` object, `write` function, `SerialException` exception:
+    - ```with patch.object(at.serial, 'write', side_effect=SerialException):```
+- To exlude function from test coverage add following flag:
+  - ```# pragma: no cover```
+  - source [here](https://coverage.readthedocs.io/en/latest/excluding.html)
 
 ##### Sources
 
@@ -106,3 +114,15 @@ Sending multiple commands
 ### Recent Proper Output
 
 ![Output](../../images/ATLIB.PNG)
+
+### Improve Error Handling Snippet
+
+```python
+try:
+    response = self.serial.read(data).decode('utf-8')
+except UnicodeDecodeError:
+    msg = "[ERROR] Couldn't decode response"
+    raise UnicodeDecodeError('utf-8', response, 0, len(response), msg)
+except SerialException:
+    raise SerialException("[ERROR] Couldn't read response")
+```
