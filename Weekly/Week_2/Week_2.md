@@ -31,13 +31,16 @@ First of all I configured my workspace
 ## Develop
 
 First, I've started to build class named `ATLIB` which will allow following operations:
+
 - Constructor for creating Serial class object ✔️
 - Find valid port ✔️
   - Code snippet [here](#get-port-function)
 - Open serial connection ✔️
 - Send at command ✔️
 - Get response ✔️
-- Recent proper output [image](#recent-proper-output)
+
+> [!TIP]
+> Recent proper output [image](#recent-proper-output)
 
 After I've completed the essentials for `ATLIB`, I started to develop following features and improvments:  
 Sending multiple commands
@@ -51,13 +54,14 @@ Sending multiple commands
 ## To-do
 
 - Remove `pytest` comment line in [workflow](https://github.com/Alperencode/AT-Lib/blob/a8e9a2ebcf66b15230fe635df1f1a7c2c8d9ddf5/.github/workflows/python-app.yml#L43) after adding tests. ✔️
-- Add comment lines.
-- Add function summaries.
-- Fix or Remove the [following](https://github.com/Alperencode/AT-Lib/blob/3dc7a8f33e4a1f9fccd70d9caf2e4e39f374589e/source/atlib.py#L71).
-- Check/Add sending more than one command
+- Finished following in this [commit](https://github.com/Alperencode/AT-Lib/commit/c3f3661862fb7ef479e775747e5e835a7b3cff4d):
+  - Add comment lines. ✔️
+  - Add function summaries. ✔️
+  - Fix or Remove the [following](https://github.com/Alperencode/AT-Lib/blob/3dc7a8f33e4a1f9fccd70d9caf2e4e39f374589e/source/atlib.py#L71). ✔️
 - Improve error handling ✔️
   - Added raise exceptions for possible exceptions
-    - Example snippet [here](#improve-error-handling-snippet)
+  - Example snippet [here](#improve-error-handling-snippet)
+- Check/Add sending more than one command
 - Complete tests
   - Current coverage: 92% [12/26/2023]
 
@@ -80,6 +84,9 @@ Sending multiple commands
 - To exlude function from test coverage add following flag:
   - ```# pragma: no cover```
   - source [here](https://coverage.readthedocs.io/en/latest/excluding.html)
+- GPRS is a packet-switched data service that enables devices to transmit data over the mobile network.
+  - Related command: `AT+CGATT`
+    - 0: not attached, 1: attached
 
 ##### Sources
 
@@ -87,6 +94,8 @@ Sending multiple commands
 - [Dev Directory](https://dev.to/softwaresennin/linux-directory-structure-simplified-a-comprehensive-guide-3012)
 - [Python Exception Handling Using Pytest Assert](https://pytest-with-eric.com/introduction/pytest-assert-exception/)
 - [Python colored texts](https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python)
+- [Telit AT Commands Reference Guide](https://www.sparkfun.com/datasheets/Cellular%20Modules/AT_Commands_Reference_Guide_r0.pdf)
+- [HTTP AT Commands](https://espressif-docs.readthedocs-hosted.com/projects/esp-at/en/release-v2.1.0.0_esp32s2/AT_Command_Set/HTTP_AT_Commands.html)
 - pySerial Serial class [docs](https://pyserial.readthedocs.io/en/latest/pyserial_api.html).
 - Modem bit settings [here](https://lehman.edu/lehman/depts/depts/langlit/help/setmodem.htm).
 - End of AT commands [question](https://stackoverflow.com/questions/13286086/end-of-response-to-an-at-command) ("\r\n").
