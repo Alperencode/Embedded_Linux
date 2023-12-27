@@ -2,12 +2,18 @@
 
 ## Week 2 Plan
 
-- <u>Python AT-Library</u> 
+- <u>[Python AT-Library](https://github.com/Alperencode/AT-Lib)</u> 
+  - [Summary](#summary)
   - [Set-up](#set-up)
   - [Develop](#develop)
   - [To-do](#to-do)
   - [Notes](#notes)
   - [Sample Images and Code Snippets](#samples)
+
+
+## Summary
+
+This week I've started to develop [AT-Library](https://github.com/Alperencode/AT-Lib) with python. First I created my workspace, repository, project folder structure, and workflow for GitHub actions. Then I started to develop AT-Library starting from creating the most important class named `ATLIB` which will provide most of the methods. While creating the class and its methods I've read so many documents and blog posts to use modules properly and efficiently to not slow down my program. After finishing the essential functions and making sure they were working, I started to write its tests. During writing tests, I realized that I had so many things to fix and improve. So I fixed the bugs and improved the methods according to test cases and completed the coverage. 
 
 ## Python AT Library
 
@@ -45,16 +51,16 @@ First, I've started to build class named `ATLIB` which will allow following oper
 After I've completed the essentials for `ATLIB`, I started to develop following features and improvments:  
 Sending multiple commands
 - Logger for colored terminal texts ✔️
-- Complete Error handling
-- Unit tests
+- Complete Error handling ✔️
+- Unit tests ✔️
 - End-user interaction
 
 <br><hr>
 
 ## To-do
 
-- Remove `pytest` comment line in [workflow](https://github.com/Alperencode/AT-Lib/blob/a8e9a2ebcf66b15230fe635df1f1a7c2c8d9ddf5/.github/workflows/python-app.yml#L43) after adding tests. ✔️
-- Finished following in this [commit](https://github.com/Alperencode/AT-Lib/commit/c3f3661862fb7ef479e775747e5e835a7b3cff4d):
+- Enable `pytest` in [workflow](https://github.com/Alperencode/AT-Lib/blob/a8e9a2ebcf66b15230fe635df1f1a7c2c8d9ddf5/.github/workflows/python-app.yml#L43) after adding tests. ✔️
+- Finished the following tasks in this [commit](https://github.com/Alperencode/AT-Lib/commit/c3f3661862fb7ef479e775747e5e835a7b3cff4d):
   - Add comment lines. ✔️
   - Add function summaries. ✔️
   - Fix or Remove the [following](https://github.com/Alperencode/AT-Lib/blob/3dc7a8f33e4a1f9fccd70d9caf2e4e39f374589e/source/atlib.py#L71). ✔️
@@ -62,8 +68,9 @@ Sending multiple commands
   - Added raise exceptions for possible exceptions
   - Example snippet [here](#improve-error-handling-snippet)
 - Check/Add sending more than one command
-- Complete tests
-  - Current coverage: 92% [12/26/2023]
+- Complete tests ✔️
+  - Current coverage: 100% [12/27/2023]
+  - Action [log](https://github.com/Alperencode/AT-Lib/actions/runs/7338188215/job/19980323287)
 
 <br><hr>
 
