@@ -71,6 +71,7 @@ Sending multiple commands
 - Complete tests ✔️
   - Current coverage: 100% [12/27/2023]
   - Action [log](https://github.com/Alperencode/AT-Lib/actions/runs/7338188215/job/19980323287)
+  - Snippet image [here](#test-coverage)
 
 <br><hr>
 
@@ -142,3 +143,7 @@ except UnicodeDecodeError:
 except SerialException:
     raise SerialException("[ERROR] Couldn't read response")
 ```
+
+### Test Coverage
+
+![Tests](../../images/Test-Coverage.PNG)
