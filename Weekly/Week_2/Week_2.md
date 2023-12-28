@@ -46,7 +46,7 @@ First, I've started to build class named `ATLIB` which will allow following oper
 - Get response ✔️
 
 > [!TIP]
-> Recent proper output [image](#recent-proper-output)
+> Recent proper output [images](#recent-proper-outputs)
 
 After I've completed the essentials for `ATLIB`, I started to develop following features and improvments:  
 Sending multiple commands
@@ -128,9 +128,13 @@ Sending multiple commands
                 return port.device
 ```
 
-### Recent Proper Output
+### Recent Proper Outputs
 
-![Output](../../images/ATLIB.PNG)
+![Output](../../images/ATLIB1.PNG)
+
+![Output](../../images/ATLIB2.PNG)
+
+![Output](../../images/ATLIB3.PNG)
 
 ### Improve Error Handling Snippet
 
