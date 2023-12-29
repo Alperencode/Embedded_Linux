@@ -10,7 +10,7 @@ This repository will be used to keep track of the progress made during the inter
   - [Roadmap](#roadmap)
     - [(-) / 14 December ✔️](#---14-december-️)
     - [14 December / 21 December ✔️](#14-december--21-december-️)
-    - [21 December / 28 December](#21-december--28-december)
+    - [21 December / 28 December ✔️](#21-december--28-december-️)
     - [28 December / 4 January](#28-december--4-january)
     - [4 January / 11 January](#4-january--11-january)
     - [11 January / 18 January](#11-january--18-january)
@@ -40,10 +40,10 @@ You can see the project instructions [here](Project/Project.md).
 -	Setting-up SSH connections ✔️
 -	Hardware integrations ✔️
 
-### [21 December / 28 December](Weekly/Week_2/Week_2.md)
--	<u>Developing Python AT Library</u>
+### [21 December / 28 December](Weekly/Week_2/Week_2.md) ✔️
+-	<u>Developing Python AT Library</u> ✔️
 
-### 28 December / 4 January
+### [28 December / 4 January](Weekly/Week_3/Week_3.md)
 -  <u>Developing Python AT Library</u>
 -	Tests (depends on workload)
 
