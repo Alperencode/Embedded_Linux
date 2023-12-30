@@ -42,13 +42,14 @@ You can see the project instructions [here](Project/Project.md).
 
 ### [21 December / 28 December](Weekly/Week_2/Week_2.md) ✔️
 -	<u>Developing Python AT Library</u> ✔️
+-	Unit Tests ✔️
 
 ### [28 December / 4 January](Weekly/Week_3/Week_3.md)
--  <u>Developing Python AT Library</u>
--	Tests (depends on workload)
+-	<u>Webhook Get-Post requests</u>
+- <u>Improving Python AT Library</u>
+-	[Final Exams]
 
 ### 4 January / 11 January
--	<u>Webhook Get-Post requests</u>
 -	<u>MQTT messages (hivemq)</u>
 -	[Final Exams]
 
@@ -62,4 +63,4 @@ You can see the project instructions [here](Project/Project.md).
 <br>
 
 > [!NOTE]
-> Timelines can be updated (Especially after [Research Stage](#14-december--21-december)) depending on workload.
+> Timelines can be updated (Especially after Research Stage) depending on workload.
