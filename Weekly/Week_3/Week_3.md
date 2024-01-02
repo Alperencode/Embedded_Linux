@@ -7,6 +7,7 @@
   - [To-Do](#to-do)
   - [Input-Outputs](#input-outputs)
 - <u>[Improving Python AT Library](#improving-python-at-library)</u>
+  - [Minor-Updates](#minor-updates)
 
 <hr>
 
@@ -52,6 +53,11 @@
 
 # Improving Python AT Library
 
+## Minor Updates
 
-> [!NOTE]
-> ***Will be updated***
+- Add `Empty response` check
+  - Reference [here](https://github.com/Alperencode/AT-Lib/commit/0baa2ac691312461cc242cc6701e0d312f5957b4#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R98)
+- Add `CONNECT` response check
+  - Reference [here](https://github.com/Alperencode/AT-Lib/commit/0baa2ac691312461cc242cc6701e0d312f5957b4#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R109-R112) (Updated due testcases later [here](https://github.com/Alperencode/AT-Lib/commit/3a609c24e69418bdf78edfea4b78a8770458303c#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R109-R112))
+- Add return response to `Unexpected AT response`
+  - Reference [here](https://github.com/Alperencode/AT-Lib/commit/0baa2ac691312461cc242cc6701e0d312f5957b4#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R115)
