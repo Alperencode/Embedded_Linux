@@ -81,7 +81,7 @@ Sometimes it gives `705` error instead of `703`:
 - Faced `CME Error 703` error which appears to be `HTTP(S) Busy` (source [here](https://sixfab.com/wp-content/uploads/2018/10/Quectel_BG96_HTTPS_AT_Commands_Manual_V1.0.pdf))
   - Sometimes getting `+QHTTPGET: 707` along with `703` error which is appears to be `HTTP(S) Network open failed`
 - Faced `+CME ERROR: 707` while trying `HTTPPOST` which appears to be `SIM toolkit not enabled` (source [here](https://www.multitech.net/developer/wp-content/uploads/2010/03/S000474A.pdf)).
-> - [!WARNING]
+> [!WARNING]
 > Getting error while using AT+QICSGP command
 
 <br>
