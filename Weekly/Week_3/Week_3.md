@@ -38,7 +38,7 @@
 - Try different `apn` names ✔️
   - Used `UNINET` according to docs. ✔️
 - Currently stuck on `703` and `705` errors.
-  - 703 means https busy so if I try to send it by delaying it using, it returns error. Sometimes, the error appears to be `705`, and sometimes don't.
+  - 703 means https busy so if I try to send it with delay, it returns error. Sometimes, the error appears to be `705`, and sometimes don't.
 
 ## Input-Outputs
 
