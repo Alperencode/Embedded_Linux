@@ -34,7 +34,7 @@
 - Add hyperlinks for all documents references in [Process of Using HTTP(S AT Commands)](#process-of-using-https-at-commands) ✔️
   - Gather up all command descriptions if necessary
 - Try 3.2 (Access to HTTPS Server) in [HTTP(S) document](https://sixfab.com/wp-content/uploads/2018/09/Quectel_EC2xEG9xEM05_HTTPS_AT_Commands_Manual_V1.0.pdf) ✔️
-  - Log errors (In [errors](#errors) section)✔️
+  - Log errors (In [errors](#errors) section) ✔️
 - Try different `apn` names ✔️
   - Used `UNINET` according to docs. ✔️
 - Currently stuck on `703` and `705` errors.
@@ -95,6 +95,7 @@ Sometimes it gives `705` error instead of `703`:
 - [Quectel SSL AT Commands Manual](https://usermanual.wiki/Document/QuectelEC2x26EG9x26EM05SSLATCommandsManualV10.1735503669/view)
 - [AT+CGREG: Modes, parameters, and examples](https://onomondo.com/blog/at-command-cgreg/#overview)
 - [What is the difference between CGDCONT and QICSGP?](https://forums.quectel.com/t/what-is-the-difference-between-cgdcont-and-qicsgp/152)
+- [GPRS (General Packet Radio Services)](https://www.techtarget.com/searchmobilecomputing/definition/GPRS)
 
 <br><hr>
 
@@ -108,6 +109,6 @@ Sometimes it gives `705` error instead of `703`:
   - Reference [here](https://github.com/Alperencode/AT-Lib/commit/0baa2ac691312461cc242cc6701e0d312f5957b4#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R109-R112) (Updated due testcases later [here](https://github.com/Alperencode/AT-Lib/commit/3a609c24e69418bdf78edfea4b78a8770458303c#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R109-R112))
 - Add return response to `Unexpected AT response`
   - Reference [here](https://github.com/Alperencode/AT-Lib/commit/0baa2ac691312461cc242cc6701e0d312f5957b4#diff-225e7cfc4be956dfc27a380f6db386cdd5c88abc9482236efcfc1b5dfa79f198R115)
-- Reduced the delay time (1 second to 0.3 second)
+- Reduced the delay time 
 - Add clearing input and output buffers
   - Related commit [here](https://github.com/Alperencode/AT-Lib/commit/0aca446582c9c8dba5122187121611d0bedda31d)
